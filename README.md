@@ -5,7 +5,7 @@ This repository contains the necessary ROS 2 package (`tb3_hybrid_control`) to d
 
 The primary goal is to execute a full object pick-up task autonomously:
 
-1.  **Navigate:** The mobile base drives from a starting point to a target location (e.g., a table) using **Nav2**.
+1.  **Navigate:** The mobile base drives from a starting point to a target location using **Nav2**.
 2.  **Manipulate:** The robotic arm precisely executes a pre-planned motion to pick up a virtual object using **MoveIt2**.
 3.  **Coordinate:** A custom Python node sequences these two major tasks. 
 

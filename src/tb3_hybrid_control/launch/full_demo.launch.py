@@ -19,8 +19,6 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(nav2_bringup_dir, 'launch', 'bringup_launch.py')
         ),
-        # NOTE: You must provide a map file specific to your Gazebo world here!
-        # launch_arguments={'map': 'path/to/your/map.yaml'}.items(),
     )
 
     # 3. Start MoveIt2 for Arm Manipulation
@@ -38,8 +36,6 @@ def generate_launch_description():
         name='hybrid_controller',
         output='screen',
         parameters=[os.path.join(get_package_share_directory('tb3_hybrid_control'), 'config', 'arm_target.yaml')],
-        # Make sure the controller starts *after* MoveIt2 and Nav2 are ready
-        # This requires more complex event handling, but we start it last for simplicity
     )
 
     return LaunchDescription([

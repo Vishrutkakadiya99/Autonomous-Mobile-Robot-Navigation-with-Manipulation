@@ -1,0 +1,20 @@
+# This is the target pose for the mobile base (Nav2)
+# Example: 3D coordinates (x, y, z) and orientation (quaternion) in the map frame
+navigation_goal:
+  x: 2.0
+  y: 0.5
+  yaw: 1.57 # 90 degrees (facing the table)
+
+# This is the target position for the arm's end-effector (MoveIt2)
+# These are relative to the robot's base frame
+manipulation_goal:
+  # Example: Position of the gripper center above the object
+  position:
+    x: 0.28
+    y: 0.0
+    z: 0.15
+  # Example: Orientation of the gripper (pitch/roll/yaw)
+  orientation:
+    r: 0.0
+    p: 0.0
+    y: 0.0

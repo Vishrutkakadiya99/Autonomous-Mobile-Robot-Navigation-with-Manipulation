@@ -46,8 +46,3 @@ source /opt/ros/humble/setup.bash
 # Ensure the correct model is set for the manipulator (Waffle Pi)
 echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 source ~/.bashrc
-
-File/Directory,Description,Customization Notes
-launch/full_demo.launch.py,"Orchestrator for starting all necessary ROS 2 services (Gazebo, Nav2, MoveIt2, controller).",Ensure your Nav2 configuration and map paths are correct if you use a custom environment.
-tb3_hybrid_control/hybrid_controller.py,The main Python node that implements the state machine using ROS 2 Action Clients to sequentially command the Nav2 and MoveIt2 Action Servers.,"This is the file to modify if you want to add more complex behaviors, like driving to a second location to drop the object."
-config/arm_target.yaml,"Defines the specific numerical goal for the navigation pose (x, y, yaw) and the arm end-effector pose (position/orientation).",Crucial: Change these values to define the robot's navigation destination and the object's precise location.

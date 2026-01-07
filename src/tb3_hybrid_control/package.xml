@@ -4,7 +4,7 @@
   <name>tb3_hybrid_control</name>
   <version>0.0.0</version>
   <description>ROS 2 package for combined mobile manipulation control.</description>
-  <maintainer email="user@todo.todo">user</maintainer>
+  <maintainer email="vishrutkakadiya99@gmail.com">vishrut</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
